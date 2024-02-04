@@ -7,10 +7,11 @@
 .grid-container {
    display: grid;
    min-height: 100vh;
-   grid-template-columns: 250px 1fr;
-   grid-template-rows: 50px 1fr 50px;
+   grid-template-columns: 150px 1fr;
+   grid-template-rows: 50px 150px 1fr 50px;
    grid-template-areas:
-      "header header"
+      "nav nav"
+      "aside header"
       "aside section"
       "footer footer"
    ;
@@ -18,21 +19,51 @@
 
 .cabeza {
    display: grid;
-   align-items: center;
-   justify-items: center;
+   place-items: center;
    background-color: black;
    color: white;
+   grid-area: nav;
+   font-family: 'Hind', sans-serif;
+}
+.cabeza h1{
+   font-size: medium;
+} 
+
+.logo{
+   display: grid;
    grid-area: header;
+   background-color: darkgray;
+   place-items: center;
 }
 
-.cabeza img {
-   width: 100px;
-}
+.logo img{
+   width: 400px;
+   }
 
 .lateral {
    background-color: rgb(214, 214, 214);
    grid-area: aside;
-   border-right: black;
+   border-right: solid 2px black;
+   padding: 20px;
+   font-family:'Hind', sans-serif;
+}
+
+.lateral ul{
+   display: flex;
+   list-style: none;
+   flex-direction: column;
+   padding: 20px;
+   justify-content: center;
+   font-weight: 500;
+}
+
+.lateral li{
+   padding-top: 10px;
+}
+
+.lateral h2{
+   font-size: 20px;
+   font-weight: 700;
 }
 
 .central {
@@ -44,11 +75,20 @@
    background-color: darkgray;
 }
 
+
+
 .pie {
    background-color: black;
    grid-area: footer;
    color: aliceblue;
+   font-family:'Hind', sans-serif;
    text-align: center;
+}
+
+.pie p{
+   padding-top: 15px;
+   font-weight: 700;
+
 }
 
 .cards {
@@ -56,11 +96,37 @@
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   height: 200px;
-   width: 400px;
+   height: 350px;
+   width: 250px;
+   background-color:white;
+   font-family:'Hind', sans-serif;
+   border: solid 1px black;
 
 }
 
 .cards img {
-   width: 70%;
+   width: 100%;
+}
+
+.cards button{
+   border-top: solid 1px black;
+   color: aliceblue;
+   background-color: red;
+   padding-top: 5px;
+   width: 250px;
+   height: 30px;
+   font-size: 12px;
+   font-weight: 600;
+}
+.cards h2{
+font-size: 16px;
+padding-left: 10px;
+padding-right: 10px;
+font-weight: 700;
+}
+.cards p{
+padding-top: 10px;
+font-size: 14px;
+font-weight: 700;
+padding-bottom: 10px;
 }

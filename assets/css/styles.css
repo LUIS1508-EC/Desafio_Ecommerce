@@ -6,9 +6,9 @@
 
 .grid-container {
    display: grid;
-   min-height: 100vh;
-   grid-template-columns: 150px 1fr;
-   grid-template-rows: 50px 150px 1fr 50px;
+   min-height: 110vh;
+   grid-template-columns: 180px 1fr;
+   grid-template-rows: 50px 120px 1fr 50px;
    grid-template-areas:
       "nav nav"
       "aside header"
@@ -20,30 +20,31 @@
 .cabeza {
    display: grid;
    place-items: center;
-   background-color: black;
-   color: white;
+   background-color:yellow;
+   color: black;
    grid-area: nav;
    font-family: 'Hind', sans-serif;
 }
 .cabeza h1{
-   font-size: medium;
+   font-size: 24px;
+   font-weight: 700;
 } 
 
 .logo{
    display: grid;
    grid-area: header;
-   background-color: darkgray;
    place-items: center;
+   background-color: black;
 }
 
 .logo img{
-   width: 400px;
+   width: 300px;
    }
 
 .lateral {
-   background-color: rgb(214, 214, 214);
+   background-color:yellow;
    grid-area: aside;
-   border-right: solid 2px black;
+   border-right: solid 2px yellow;
    padding: 20px;
    font-family:'Hind', sans-serif;
 }
@@ -52,18 +53,32 @@
    display: flex;
    list-style: none;
    flex-direction: column;
-   padding: 20px;
+   padding: 5px;
    justify-content: center;
    font-weight: 500;
+   color: black;
 }
 
 .lateral li{
-   padding-top: 10px;
+   padding-top: 20px;
+}
+
+.cat{
+   padding-bottom: 20px;
+   font-size: 18px;
+   font-weight: 700;
 }
 
 .lateral h2{
    font-size: 20px;
    font-weight: 700;
+   color: black;
+   padding-bottom: 30px;
+}
+
+.lateral img{
+   width: 100%;
+   padding-top: 300px;
 }
 
 .central {
@@ -72,17 +87,18 @@
    grid-template-rows: 1fr 1fr;
    grid-area: section;
    place-items: center;
-   background-color: darkgray;
+   background-image: url(../images/fondo.jpg);
 }
 
 
 
 .pie {
-   background-color: black;
+   background-color: yellow;
    grid-area: footer;
-   color: aliceblue;
+   color:black;
    font-family:'Hind', sans-serif;
    text-align: center;
+   border: solid 1px yellow;
 }
 
 .pie p{
@@ -100,7 +116,7 @@
    width: 250px;
    background-color:white;
    font-family:'Hind', sans-serif;
-   border: solid 1px black;
+   border: solid 3px black;
 
 }
 
@@ -110,8 +126,8 @@
 
 .cards button{
    border-top: solid 1px black;
-   color: aliceblue;
-   background-color: red;
+   color: yellow;
+   background-color: black;
    padding-top: 5px;
    width: 250px;
    height: 30px;
@@ -123,6 +139,7 @@ font-size: 16px;
 padding-left: 10px;
 padding-right: 10px;
 font-weight: 700;
+text-align: center;
 }
 .cards p{
 padding-top: 10px;

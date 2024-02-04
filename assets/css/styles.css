@@ -24,6 +24,7 @@
    color: black;
    grid-area: nav;
    font-family: 'Hind', sans-serif;
+   border: solid 1px black
 }
 
 .cabeza h1 {
@@ -100,6 +101,7 @@
    font-family: 'Hind', sans-serif;
    text-align: center;
    border: solid 1px yellow;
+   border: solid 1px black;
 }
 
 .pie p {

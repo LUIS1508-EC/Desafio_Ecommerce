@@ -20,36 +20,37 @@
 .cabeza {
    display: grid;
    place-items: center;
-   background-color:yellow;
+   background-color: yellow;
    color: black;
    grid-area: nav;
    font-family: 'Hind', sans-serif;
 }
-.cabeza h1{
+
+.cabeza h1 {
    font-size: 24px;
    font-weight: 700;
-} 
+}
 
-.logo{
+.logo {
    display: grid;
    grid-area: header;
    place-items: center;
    background-color: black;
 }
 
-.logo img{
+.logo img {
    width: 300px;
-   }
+}
 
 .lateral {
-   background-color:yellow;
+   background-color: yellow;
    grid-area: aside;
    border-right: solid 2px yellow;
    padding: 20px;
-   font-family:'Hind', sans-serif;
+   font-family: 'Hind', sans-serif;
 }
 
-.lateral ul{
+.lateral ul {
    display: flex;
    list-style: none;
    flex-direction: column;
@@ -59,24 +60,24 @@
    color: black;
 }
 
-.lateral li{
+.lateral li {
    padding-top: 20px;
 }
 
-.cat{
+.cat {
    padding-bottom: 20px;
    font-size: 18px;
    font-weight: 700;
 }
 
-.lateral h2{
+.lateral h2 {
    font-size: 20px;
    font-weight: 700;
    color: black;
    padding-bottom: 30px;
 }
 
-.lateral img{
+.lateral img {
    width: 100%;
    padding-top: 300px;
 }
@@ -95,13 +96,13 @@
 .pie {
    background-color: yellow;
    grid-area: footer;
-   color:black;
-   font-family:'Hind', sans-serif;
+   color: black;
+   font-family: 'Hind', sans-serif;
    text-align: center;
    border: solid 1px yellow;
 }
 
-.pie p{
+.pie p {
    padding-top: 15px;
    font-weight: 700;
 
@@ -114,8 +115,8 @@
    flex-direction: column;
    height: 350px;
    width: 250px;
-   background-color:white;
-   font-family:'Hind', sans-serif;
+   background-color: white;
+   font-family: 'Hind', sans-serif;
    border: solid 3px black;
 
 }
@@ -124,7 +125,7 @@
    width: 100%;
 }
 
-.cards button{
+.cards button {
    border-top: solid 1px black;
    color: yellow;
    background-color: black;
@@ -134,16 +135,18 @@
    font-size: 12px;
    font-weight: 600;
 }
-.cards h2{
-font-size: 16px;
-padding-left: 10px;
-padding-right: 10px;
-font-weight: 700;
-text-align: center;
+
+.cards h2 {
+   font-size: 16px;
+   padding-left: 10px;
+   padding-right: 10px;
+   font-weight: 700;
+   text-align: center;
 }
-.cards p{
-padding-top: 10px;
-font-size: 14px;
-font-weight: 700;
-padding-bottom: 10px;
+
+.cards p {
+   padding-top: 10px;
+   font-size: 14px;
+   font-weight: 700;
+   padding-bottom: 10px;
 }
